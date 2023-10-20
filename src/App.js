@@ -4,6 +4,9 @@ import React, {useState, useEffect} from "react";
 
 function App() {
   const [msg, setMsg] = useState([]);
+  //설치 필수
+  //npm install axios
+  //npm install http-proxymiddleware
   useEffect(() => {
     fetch("/test/test")
         .then((res) => {return res.json();})
